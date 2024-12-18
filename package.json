@@ -1,17 +1,14 @@
 {
-  "name": "@xyflow/monorepo",
+  "name": "@r0busta/monorepo",
   "version": "0.0.0",
   "description": "A highly customizable React library for building node-based editors and interactive flow charts",
-  "repository": "git@github.com:xyflow/xyflow.git",
+  "repository": "git@github.com:r0busta/xyflow.git",
   "license": "MIT",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev --parallel --concurrency 12",
-    "dev:svelte": "turbo run dev --filter=svelte-examples...",
     "dev:react": "turbo run dev --filter=react-examples...",
-    "test:svelte": "pnpm --filter=playwright run test:svelte",
-    "test:svelte:ui": "pnpm --filter=playwright run test:svelte:ui",
     "test:react": "pnpm --filter=playwright run test:react",
     "test:react:ui": "pnpm --filter=playwright run test:react:ui",
     "build:all": "turbo run build",
@@ -39,6 +36,5 @@
     "rollup": "^4.18.0",
     "turbo": "^2.0.3",
     "typescript": "5.1.3"
-  },
-  "packageManager": "pnpm@9.2.0"
+  }
 }
